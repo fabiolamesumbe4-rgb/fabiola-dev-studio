@@ -1,40 +1,395 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Fabiola Dev Studio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        *{
+
+            margin:0;
+
+            padding:0;
+
+            box-sizing:border-box;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body{
+
+            background:#0d0d0d;
+
+            color:white;
+
+            line-height:1.6;
+
+        }
+
+        header{
+
+            background:linear-gradient(to right,#000000,#1a1a1a);
+
+            padding:60px 20px;
+
+            text-align:center;
+
+        }
+
+        header h1{
+
+            font-size:55px;
+
+            color:#f7c56b;
+
+            letter-spacing:3px;
+
+        }
+
+        header h2{
+
+            font-size:28px;
+
+            margin-top:10px;
+
+            color:#ffffff;
+
+        }
+
+        header p{
+
+            max-width:800px;
+
+            margin:20px auto;
+
+            color:#d9d9d9;
+
+            font-size:18px;
+
+        }
+
+        .btn{
+
+            display:inline-block;
+
+            margin-top:20px;
+
+            padding:12px 30px;
+
+            background:#f7c56b;
+
+            color:#000;
+
+            text-decoration:none;
+
+            border-radius:30px;
+
+            font-weight:bold;
+
+            transition:0.3s;
+
+        }
+
+        .btn:hover{
+
+            background:white;
+
+        }
+
+        .container{
+
+            width:90%;
+
+            max-width:1200px;
+
+            margin:auto;
+
+            padding:50px 0;
+
+        }
+
+        .section-title{
+
+            text-align:center;
+
+            margin-bottom:40px;
+
+            color:#f7c56b;
+
+            font-size:40px;
+
+        }
+
+        .services{
+
+            display:grid;
+
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+            gap:20px;
+
+        }
+
+        .card{
+
+            background:#1a1a1a;
+
+            padding:25px;
+
+            border-radius:15px;
+
+            border:1px solid #f7c56b44;
+
+            transition:0.3s;
+
+        }
+
+        .card:hover{
+
+            transform:translateY(-8px);
+
+            border-color:#f7c56b;
+
+        }
+
+        .card h3{
+
+            color:#f7c56b;
+
+            margin-bottom:15px;
+
+        }
+
+        .why-us{
+
+            text-align:center;
+
+        }
+
+        .why-us ul{
+
+            list-style:none;
+
+            margin-top:20px;
+
+        }
+
+        .why-us li{
+
+            margin:15px 0;
+
+            font-size:20px;
+
+        }
+
+        .contact{
+
+            background:#111;
+
+            padding:50px 20px;
+
+            text-align:center;
+
+            border-top:2px solid #f7c56b;
+
+        }
+
+        .contact h2{
+
+            color:#f7c56b;
+
+            margin-bottom:20px;
+
+            font-size:40px;
+
+        }
+
+        .contact p{
+
+            font-size:22px;
+
+            margin:10px 0;
+
+        }
+
+        footer{
+
+            text-align:center;
+
+            padding:20px;
+
+            background:#000;
+
+            color:#aaa;
+
+        }
+
+        @media(max-width:768px){
+
+            header h1{
+
+                font-size:40px;
+
+            }
+
+            header h2{
+
+                font-size:22px;
+
+            }
+
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-<header>
-    <h1>Fabiola Dev Studio</h1>
-    <p>Building modern websites & digital solutions</p>
-</header>
+    <!-- HEADER -->
 
-<section>
-    <h2>About Me</h2>
-    <p>I am a web developer passionate about creating beautiful and functional websites.</p>
-</section>
+    <header>
 
-<section>
-    <h2>Services</h2>
-    <ul>
-        <li>Website Design</li>
-        <li>Frontend Development</li>
-        <li>Bug Fixing</li>
-    </ul>
-</section>
+        <h1>FABIOLA</h1>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: your-email@gmail.com</p>
-</section>
+        <h2>Professional Software Engineer</h2>
 
-<footer>
-    <p>© 2026 Fabiola Dev Studio</p>
-</footer>
+        <p>
+
+            Turning ideas into powerful digital solutions.
+
+            I design, develop, and maintain high-quality software tailored
+
+            to your needs.
+
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+
+    </header>
+
+    <!-- SERVICES -->
+
+    <section class="container">
+
+        <h2 class="section-title">Services Offered</h2>
+
+        <div class="services">
+
+            <div class="card">
+
+                <h3>Web Application Development</h3>
+
+                <p>Modern responsive web applications for businesses and individuals.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Database Design</h3>
+
+                <p>Efficient database systems and management solutions.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Software Testing</h3>
+
+                <p>Debugging and testing services for reliable applications.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Website Design</h3>
+
+                <p>Professional website design and maintenance services.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Software Management</h3>
+
+                <p>Software planning, management, and maintenance.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>IT Consultation</h3>
+
+                <p>Expert advice and technical consultation services.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Windows Installation</h3>
+
+                <p>Windows setup and software installation support.</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Graphics & Designing</h3>
+
+                <p>Creative and professional design services.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHY CHOOSE ME -->
+
+    <section class="container why-us">
+
+        <h2 class="section-title">Why Choose Me?</h2>
+
+        <ul>
+
+            <li>✔ Reliable & Professional</li>
+
+            <li>✔ Fast Delivery</li>
+
+            <li>✔ Clean & Maintainable Code</li>
+
+        </ul>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📞 671352221</p>
+
+        <p>📧 fabiolamesumbe4@gmail.com</p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Fabiola Dev Studio | All Rights Reserved</p>
+
+    </footer>
 
 </body>
+
 </html>
